@@ -1,0 +1,15 @@
+/* Class = "UIButton"; normalTitle = "meters"; ObjectID = "ggW-0J-bkX"; */
+"ggW-0J-bkX.normalTitle" = "metros";
+
+/* Class = "UILabel"; text = "You will be notified when you leave your area"; ObjectID = "Kd9-oQ-MP3"; */
+"Kd9-oQ-MP3.text" = "Te llegará una notificación cuando abandones tu área de paseo.";
+
+/* Class = "UIButton"; normalTitle = "START"; ObjectID = "lbr-xK-QaT"; */
+"lbr-xK-QaT.normalTitle" = "Empezar";
+
+/* Class = "UILabel"; text = "New walk"; ObjectID = "qX0-Iz-I4w"; */
+"qX0-Iz-I4w.text" = "Nuevo paseo";
+
+/* Class = "UITextField"; placeholder = "Radius"; ObjectID = "R8A-Mg-BHj"; */
+"R8A-Mg-BHj.placeholder" = "Radio";
+

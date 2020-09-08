@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Start View Controller-->
+        <scene sceneID="JSS-Kh-wBx">
+            <objects>
+                <viewController storyboardIdentifier="StartViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6Fi-UW-jHO" customClass="StartViewController" customModule="iCov" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GOl-c0-2bV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New walk" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qX0-Iz-I4w">
+                                <rect key="frame" x="16" y="60" width="382" height="41"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be notified when you leave your area" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd9-oQ-MP3">
+                                <rect key="frame" x="16" y="117" width="382" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="HDP-om-LYv">
+                                <rect key="frame" x="16" y="153.5" width="382" height="80"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Radius" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="R8A-Mg-BHj">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="Id7-Ea-GoC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
+                                        <connections>
+                                            <action selector="radiusTextFieldEditingChanged:" destination="6Fi-UW-jHO" eventType="editingChanged" id="UGP-Hy-Ce3"/>
+                                        </connections>
+                                    </textField>
+                                    <pickerView contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="Kz7-Qx-JFD">
+                                        <rect key="frame" x="202" y="0.0" width="180" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="18P-52-XPA"/>
+                                        </constraints>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lbr-xK-QaT">
+                                <rect key="frame" x="16" y="249.5" width="382" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Yym-xU-rnY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" systemColor="placeholderTextColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="beginButtonTouchUpInside:" destination="6Fi-UW-jHO" eventType="touchUpInside" id="PHK-c8-dLA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HDP-om-LYv" firstAttribute="centerX" secondItem="YPo-pC-UOe" secondAttribute="centerX" id="1yd-ka-Iuo"/>
+                            <constraint firstItem="lbr-xK-QaT" firstAttribute="top" secondItem="HDP-om-LYv" secondAttribute="bottom" constant="16" id="D0G-MF-ecd"/>
+                            <constraint firstItem="Kd9-oQ-MP3" firstAttribute="trailing" secondItem="qX0-Iz-I4w" secondAttribute="trailing" id="Hhb-2w-W3E"/>
+                            <constraint firstItem="lbr-xK-QaT" firstAttribute="centerX" secondItem="YPo-pC-UOe" secondAttribute="centerX" id="N0T-ku-hC3"/>
+                            <constraint firstItem="Kd9-oQ-MP3" firstAttribute="leading" secondItem="qX0-Iz-I4w" secondAttribute="leading" id="YXc-gk-SNn"/>
+                            <constraint firstItem="HDP-om-LYv" firstAttribute="leading" secondItem="YPo-pC-UOe" secondAttribute="leading" constant="16" id="clk-KS-mJK"/>
+                            <constraint firstItem="qX0-Iz-I4w" firstAttribute="top" secondItem="YPo-pC-UOe" secondAttribute="top" constant="16" id="csx-m5-H4H"/>
+                            <constraint firstItem="Kd9-oQ-MP3" firstAttribute="top" secondItem="qX0-Iz-I4w" secondAttribute="bottom" constant="16" id="dPu-JK-u2t"/>
+                            <constraint firstItem="YPo-pC-UOe" firstAttribute="trailing" secondItem="qX0-Iz-I4w" secondAttribute="trailing" constant="16" id="qL2-W2-dHk"/>
+                            <constraint firstItem="qX0-Iz-I4w" firstAttribute="leading" secondItem="YPo-pC-UOe" secondAttribute="leading" constant="16" id="xfU-Aj-duD"/>
+                            <constraint firstItem="lbr-xK-QaT" firstAttribute="leading" secondItem="YPo-pC-UOe" secondAttribute="leading" constant="16" id="zSl-XU-Fzj"/>
+                            <constraint firstItem="HDP-om-LYv" firstAttribute="top" secondItem="Kd9-oQ-MP3" secondAttribute="bottom" constant="16" id="zk4-ld-x3b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YPo-pC-UOe"/>
+                    </view>
+                    <connections>
+                        <outlet property="beginButton" destination="lbr-xK-QaT" id="Mfg-Gg-kf9"/>
+                        <outlet property="measuringUnitPicker" destination="Kz7-Qx-JFD" id="rRG-4d-RLr"/>
+                        <outlet property="radiusTextField" destination="R8A-Mg-BHj" id="oce-Fu-Dce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dHC-lA-VM9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1187" y="37"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MapViewController" customModule="iCov" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5bc-OV-9x4">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="KKD-S1-pJi">
+                                <rect key="frame" x="16" y="816" width="382" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vuf-rj-JU2">
+                                        <rect key="frame" x="0.0" y="0.0" width="318" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="paJ-Ov-fe9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <state key="normal" title="Start here">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="startButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VCq-Kl-hIm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVm-CK-onp">
+                                        <rect key="frame" x="334" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="oyf-dE-Ic0"/>
+                                        </constraints>
+                                        <state key="normal" image="pause.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPauseButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fBD-PY-yqA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="dje-aM-3yd">
+                                <rect key="frame" x="16" y="84" width="382" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY8-TP-vlv">
+                                        <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="6if-lo-Yar"/>
+                                            <constraint firstAttribute="height" constant="48" id="Hkz-us-bbK"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="location.fill" catalog="system"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="findMeButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3d-yL-aFY"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="EYj-mA-Nna">
+                                        <rect key="frame" x="64" y="0.0" width="318" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="bBt-K7-eLh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5bc-OV-9x4" secondAttribute="trailing" id="20R-AW-UZ4"/>
+                            <constraint firstItem="KKD-S1-pJi" firstAttribute="leading" secondItem="5bc-OV-9x4" secondAttribute="leading" constant="16" id="3OA-lc-uPH"/>
+                            <constraint firstItem="dje-aM-3yd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="6Pd-u9-fK5"/>
+                            <constraint firstItem="KKD-S1-pJi" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" constant="-32" id="9gN-uY-iIE"/>
+                            <constraint firstItem="bBt-K7-eLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9kH-sb-tZk"/>
+                            <constraint firstItem="5bc-OV-9x4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ia6-OV-dls"/>
+                            <constraint firstAttribute="bottom" secondItem="5bc-OV-9x4" secondAttribute="bottom" id="Qe6-WJ-pg0"/>
+                            <constraint firstAttribute="bottom" secondItem="bBt-K7-eLh" secondAttribute="bottom" id="eCD-Tu-e68"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bBt-K7-eLh" secondAttribute="trailing" id="gDx-x4-G8b"/>
+                            <constraint firstItem="bBt-K7-eLh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="k7B-Uy-CYl"/>
+                            <constraint firstItem="KKD-S1-pJi" firstAttribute="leading" secondItem="dje-aM-3yd" secondAttribute="leading" id="kC3-lV-B2k"/>
+                            <constraint firstItem="5bc-OV-9x4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kZI-ul-R4n"/>
+                            <constraint firstItem="KKD-S1-pJi" firstAttribute="trailing" secondItem="5bc-OV-9x4" secondAttribute="trailing" constant="-16" id="nmZ-0N-BDW"/>
+                            <constraint firstItem="dje-aM-3yd" firstAttribute="trailing" secondItem="KKD-S1-pJi" secondAttribute="trailing" id="wbY-2I-Fzk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="findMeButton" destination="oY8-TP-vlv" id="Cae-yI-cHV"/>
+                        <outlet property="launchScreenImageView" destination="bBt-K7-eLh" id="9Ms-ue-Sfl"/>
+                        <outlet property="mapView" destination="5bc-OV-9x4" id="qnT-Yz-Ecm"/>
+                        <outlet property="metersLabel" destination="EYj-mA-Nna" id="VUA-tN-Ppg"/>
+                        <outlet property="playPauseButton" destination="tVm-CK-onp" id="f3A-cD-hO5"/>
+                        <outlet property="startButton" destination="Vuf-rj-JU2" id="A8u-1T-m4p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-507" y="-154"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="LaunchScreen" width="1024" height="1024"/>
+        <image name="location.fill" catalog="system" width="64" height="56"/>
+        <image name="pause.fill" catalog="system" width="58" height="64"/>
+    </resources>
+</document>

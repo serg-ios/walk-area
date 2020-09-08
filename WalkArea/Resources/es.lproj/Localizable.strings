@@ -1,0 +1,59 @@
+/* No comment provided by engineer. */
+"STOP" = "ALTO";
+
+/* No comment provided by engineer. */
+"kilometers" = "kilómetros";
+
+/* No comment provided by engineer. */
+"km" = "km";
+
+/* No comment provided by engineer. */
+"m" = "m";
+
+/* No comment provided by engineer. */
+"meters" = "metros";
+
+/* No comment provided by engineer. */
+"mi" = "mi";
+
+/* No comment provided by engineer. */
+"miles" = "millas";
+
+/* No comment provided by engineer. */
+"No" = "No";
+
+/* No comment provided by engineer. */
+"You're leaving your walking area." = "Estás abandonando tu área de paseo.";
+
+/* No comment provided by engineer. */
+"Warning" = "Atención";
+
+/* No comment provided by engineer. */
+"yards" = "yardas";
+
+/* No comment provided by engineer. */
+"yd" = "yd";
+
+/* No comment provided by engineer. */
+"Yes" = "Sí";
+
+/* No comment provided by engineer. */
+"You will create a new walking area." = "Crearás una nueva zona de paseo.";
+
+/* No comment provided by engineer. */
+"Pause tracking" = "Pausar rastreo";
+
+/* No comment provided by engineer. */
+"Resume tracking" = "Reanudar rastreo";
+
+/* No comment provided by engineer. */
+"You will pause GPS tracking." = "Pausarás el rastreo por GPS.";
+
+/* No comment provided by engineer. */
+"You will resume GPS tracking." = "Reanudarás el rastreo por GPS.";
+
+/* No comment provided by engineer. */
+"New walk" = "Nuevo paseo";
+
+/* No comment provided by engineer. */
+"Do you want to start a new walk?" = "¿Deseas comenzar un nuevo paseo?";

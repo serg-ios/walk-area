@@ -1,0 +1,59 @@
+/* No comment provided by engineer. */
+"STOP" = "FERMARE";
+
+/* No comment provided by engineer. */
+"kilometers" = "chilometri";
+
+/* No comment provided by engineer. */
+"km" = "km";
+
+/* No comment provided by engineer. */
+"m" = "m";
+
+/* No comment provided by engineer. */
+"meters" = "metri";
+
+/* No comment provided by engineer. */
+"mi" = "mi";
+
+/* No comment provided by engineer. */
+"miles" = "miglia";
+
+/* No comment provided by engineer. */
+"No" = "No";
+
+/* No comment provided by engineer. */
+"You're leaving your walking area." = "Stai per lasciare la tua zona pedonale.";
+
+/* No comment provided by engineer. */
+"Warning" = "avvertimento";
+
+/* No comment provided by engineer. */
+"yards" = "yarde";
+
+/* No comment provided by engineer. */
+"yd" = "yd";
+
+/* No comment provided by engineer. */
+"Yes" = "Sì";
+
+/* No comment provided by engineer. */
+"You will create a new walking area." = "Creerai una nuova area pedonale.";
+
+/* No comment provided by engineer. */
+"Pause tracking" = "Metti in pausa il tracciamento";
+
+/* No comment provided by engineer. */
+"Resume tracking" = "Riprendi il monitoraggio";
+
+/* No comment provided by engineer. */
+"You will pause GPS tracking." = "Metti in pausa il tracciamento GPS.";
+
+/* No comment provided by engineer. */
+"You will resume GPS tracking." = "Riprenderai il tracciamento GPS.";
+
+/* No comment provided by engineer. */
+"New walk" = "Nuova passeggiata";
+
+/* No comment provided by engineer. */
+"Do you want to start a new walk?" = "Vuoi iniziare una nuova passeggiata?";
